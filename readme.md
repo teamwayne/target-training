@@ -1,3 +1,3 @@
 # target-training
 
-[Floating footer demo experience](./floating-footer/readme.md)
+[Floating footer demo experience](./campaign-boilerplate/readme.md)

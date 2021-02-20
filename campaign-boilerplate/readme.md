@@ -27,3 +27,9 @@ adobe.target.getOffer({
   }
 });
 ```
+
+## Using the build framework
+
+You can use the **campaign-boilerplate** for building Adobe Target campaigns. This was originally created a long time ago, so chances are you want to use some other tools that might be more current. The approach will however be similar.
+
+To build, run `grunt build --campaign=[src/folder-name]`, as an example: `grunt build --campaign=floatingFooter`.

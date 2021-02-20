@@ -1,6 +1,6 @@
 window.load = window.load || {};
 window.load.tools = window.load.tools || {};
-window.load.tools.log = window.load.tools.log || function() {console.log();};
+window.load.tools.log = window.load.tools.log || function (msg) { console.log(msg);};
 
 // var waitForBody = function(method) {
 //     if(document.body || document.getElementsByTagName('body')[0]) {

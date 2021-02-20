@@ -1,1 +1,2 @@
-floating-footer/build/
+campaign-boilerplate/build/*
+campaign-boilerplate/node_modules/*
