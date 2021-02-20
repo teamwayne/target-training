@@ -1,0 +1,26 @@
+{
+  "name": "testing-and-optimisation-build-framework",
+  "version": "0.0.1",
+  "description": "Continuous build framework for the optimisation of testing & optimisation campaigns to be used with Adobe Target or other testing and optimisation frameworks.",
+  "main": "index.js",
+  "author": "Richard Karlsson",
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/richardkarlsson/testing-and-optimisation-build-framework.git"
+  },
+  "keywords": [
+    "something",
+    "something",
+    "else"
+  ],
+  "homepage": "https://bitbucket.org/richardkarlsson/testing-and-optimisation-build-framework#readme",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "yargs": "^9.0.1"
+  }
+}
