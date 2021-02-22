@@ -1,36 +1,12 @@
+// Import tools from load.js
 window.load = window.load || {};
 window.load.tools = window.load.tools || {};
 window.load.tools.log = window.load.tools.log || function (msg) { console.log(msg);};
 
-// var waitForBody = function(method) {
-//     if(document.body || document.getElementsByTagName('body')[0]) {
-//         method();
-//     } else {
-//         window.adobe.log('waitForBody...');
-//         setTimeout(function () {
-//             waitForBody(method);
-//         }, 50);
-//     }
-// };
-
-// var getQueryParams = function(qs) {
-//     qs = qs.replace(/\+/g, " ");
-//     var params = {},
-//         re = /[?&]?([^=]+)=([^&]*)/g,
-//         tokens;
-//    /* jshint ignore:start */
-//     while (tokens = re.exec(qs)) {
-//     params[decodeURIComponent(tokens[1])] = decodeURIComponent(tokens[2]);
-//     }
-//    /* jshint ignore:end */
-//     return params;
-// };
-
-// var queryParams = getQueryParams(window.location.search);
-
 var maxArticles = 5;
-
 var cookieName = "tntcount";
+
+// Get dynamic variables from Adobbe Target for use within the campaign.
 var tntItms = {
     campaign: {
         name: '${campaign.name}',
@@ -55,8 +31,9 @@ var tntItms = {
 var experience = tntItms.campaign.recepiName;
 // var experience = 'ctp';
 
-window.load.tools.log(tntItms);
+window.load.tools.log('Adobe Target Campaign Object:', tntItms);
 
+// This is legacy stuff...
 var readCookie = function(name) {
     name = name.replace(/([.*+?^=!:${}()|[\]\/\\])/g, '\\$1');
 

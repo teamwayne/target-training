@@ -25,7 +25,7 @@ module.exports = function(grunt) {
           footer: "\n})();"
         },
         src: sources,
-        dest: 'build/dev/' + docName,
+        dest: 'build/dev/' + campaign + docName,
       },
       prod: {
         options: {
@@ -34,7 +34,7 @@ module.exports = function(grunt) {
           footer: "\n})();"
         },
         src: sources,
-        dest: 'build/prod/' + docName,
+        dest: 'build/prod/' + campaign + docName,
       }
     },
     uglify: {
@@ -42,8 +42,8 @@ module.exports = function(grunt) {
         options: {
           banner: "/*! PROD <%= pkg.name %> <%= grunt.template.today('yyyy-mm-dd HH:mm') %> */\n"
         },
-        src: 'build/prod/' + docName,
-        dest: 'build/prod/' + docNameMin
+        src: 'build/prod/' + campaign + docName,
+        dest: 'build/prod/' + campaign + docNameMin
       }
     },
     watch: {
