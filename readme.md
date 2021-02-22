@@ -10,7 +10,7 @@ To build, run `grunt build --campaign=[src/folder-name]`, as an example: `grunt 
 
 Use following on site API call for activation of demos:
 
-## [Floating Footer Widget Campaign](#floatingFooter)
+## Floating Footer Widget Campaign
 
 ```javascript
 adobe.target.getOffer({
@@ -38,7 +38,7 @@ adobe.target.getOffer({
 
 > To build using boilerplate: `grunt build --campaign=floatingFooter`
 
-## [Campaing Object (pass camaping info on window scope)](#campaignObject)
+## Campaing Object (pass camaping info on window scope)
 
 Use following on site API call for activation of demo:
 
