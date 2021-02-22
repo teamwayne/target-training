@@ -1,10 +1,16 @@
-# Floating footer demo experience
+# Adobe Target Demo Campaigns
 
-Live demos can bee seen across e.g. [www.nrma.com.au](https://www.nrma.com.au).
+Live demos can bee invoced using enclosed API calls across e.g. [www.nrma.com.au](https://www.nrma.com.au).
+
+## Using the build framework
+
+You can use the **campaign-boilerplate** for building Adobe Target campaigns. This was originally created a long time ago, so chances are you want to use some other tools that might be more current. The approach will however be similar.
+
+To build, run `grunt build --campaign=[src/folder-name]`, as an example: `grunt build --campaign=floatingFooter`.
 
 Use following on site API call for activation of demos:
 
-## Floating Footer Widget
+## Floating Footer Widget Campaign
 
 ```javascript
 adobe.target.getOffer({
@@ -30,7 +36,7 @@ adobe.target.getOffer({
 });
 ```
 
-To build using boilerplate: `grunt build --campaign=floatingFooter`
+> To build using boilerplate: `grunt build --campaign=floatingFooter`
 
 ## Campaing Object (pass camaping info on window scope)
 
@@ -59,10 +65,4 @@ adobe.target.getOffer({
 });
 ```
 
-To build using boilerplate: `grunt build --campaign=campaignObject`
-
-## Using the build framework
-
-You can use the **campaign-boilerplate** for building Adobe Target campaigns. This was originally created a long time ago, so chances are you want to use some other tools that might be more current. The approach will however be similar.
-
-To build, run `grunt build --campaign=[src/folder-name]`, as an example: `grunt build --campaign=floatingFooter`.
+> To build using boilerplate: `grunt build --campaign=campaignObject`
