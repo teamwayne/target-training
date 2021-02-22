@@ -2,4 +2,5 @@
 
 ## Campaigns
 
-- [Floating footer demo experience](./campaign-boilerplate/readme.md)
+- [Floating Footer Widget Campaign](./campaign-boilerplate/readme.md#floatingFooter)
+- [Campaing Object (pass camaping info on window scope)](./campaign-boilerplate/readme.md#campaignObject)
